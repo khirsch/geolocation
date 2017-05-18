@@ -22,6 +22,8 @@
       console.log(data);
       speed.textContent = data.coords.speed;
       arrow.style.transform = `rotate(${data.coords.heading}deg)`;
+    }, (err) => {
+      console.err(err);
     });
   </script>
 </body>
